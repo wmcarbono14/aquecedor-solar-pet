@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aquecedor Solar de Garrafas PET – Prof. William Mendonça</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --text: #0f172a;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #e2e8f0;
+    }
+    header {
+      background: var(--bg);
+      color: #fff;
+      text-align: center;
+      padding: 2.4rem 1rem 1.8rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin-top: .4rem;
+      opacity: .85;
+    }
+    main {
+      max-width: 1000px;
+      margin: 1.8rem auto 3.5rem;
+      padding: 0 1.2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.2rem 1.3rem;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, .08);
+      border: 1px solid rgba(15, 23, 42, .05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .card p {
+      font-size: .9rem;
+      color: #475569;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: .7rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: .55rem .9rem;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: .85rem;
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      font-size: .75rem;
+      color: #475569;
+      margin: 2rem 0 3rem;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(15,118,110,.12);
+      color: #0f766e;
+      font-size: .65rem;
+      font-weight: 600;
+      padding: .25rem .5rem;
+      border-radius: 9999px;
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    /* QR codes */
+    .qr-section {
+      margin-top: 2.4rem;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.2rem 1.4rem;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, .05);
+      border: 1px solid rgba(15, 23, 42, .04);
+    }
+    .qr-section h2 {
+      margin-top: 0;
+      color: #0f172a;
+      font-size: 1.1rem;
+    }
+    .qr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .qr-card {
+      text-align: center;
+    }
+    .qr-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #cbd5f5;
+    }
+    .qr-card p {
+      margin-top: .5rem;
+      font-size: .8rem;
+      color: #334155;
+    }
+    /* contador */
+    #visitas {
+      text-align: center;
+      font-size: .8rem;
+      margin-top: 1.5rem;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto: Aquecedor Solar com Garrafas PET</h1>
+    <p>Prof. William Mendonça – Química | Centro Educacional Darcy Ribeiro (SEEDF)</p>
+    <p>Escolha abaixo o tipo de material que quer acessar 👇</p>
+  </header>
+
+  <main>
+    <!-- cards principais -->
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Para alunos</span>
+        <h2>Versão Didática</h2>
+        <p>
+          Explicação simples, passo a passo, materiais, teoria básica, cálculo fácil de calor e conclusão. Indicada para turma do ensino médio.
+        </p>
+        <a class="btn" href="aquecedor-didatico.html">Acessar apostila</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">Para feira / relatório</span>
+        <h2>Versão Técnica</h2>
+        <p>
+          Documento estruturado: resumo, objetivos, fundamentação, materiais e métodos, resultados e referências. Ideal para apresentar o experimento.
+        </p>
+        <a class="btn" href="aquecedor-tecnico.html">Acessar relatório técnico</a>
+      </div>
+
+      <div class="card">
+        <span class="tag">Para direção / SEEDF</span>
+        <h2>Versão Institucional</h2>
+        <p>
+          Texto com foco em impacto social, ambiental e educacional. Serve para justificar o projeto e pedir apoio ou parceria.
+        </p>
+        <a class="btn" href="aquecedor-institucional.html">Acessar versão institucional</a>
+      </div>
+    </div>
+
+    <!-- QR codes -->
+    <section class="qr-section">
+      <h2>QR Codes para acesso rápido</h2>
+      <p style="font-size:.85rem; color:#64748b;">Imprima esses QR e cole no laboratório, sala de aula ou na feira. Os alunos escaneiam e vão direto para a versão certa.</p>
+      <div class="qr-grid">
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wmcarbono14.github.io/aquecedor-solar-pet/aquecedor-didatico.html" alt="QR Versão Didática">
+          <p>Versão Didática</p>
+        </div>
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wmcarbono14.github.io/aquecedor-solar-pet/aquecedor-tecnico.html" alt="QR Versão Técnica">
+          <p>Versão Técnica</p>
+        </div>
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wmcarbono14.github.io/aquecedor-solar-pet/aquecedor-institucional.html" alt="QR Versão Institucional">
+          <p>Versão Institucional</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contador -->
+    <div id="visitas">
+      Visitantes do projeto: <span id="contador">carregando...</span>
+    </div>
+
+  </main>
+
+  <div class="footer">
+    Hospede estes arquivos no GitHub Pages e compartilhe o link com alunos e escola.<br />
+    © 2025 – Prof. William Mendonça
+  </div>
+
+  <!-- contador via CountAPI -->
+  <script>
+    fetch('https://api.countapi.xyz/hit/wmcarbono14/aquecedor-solar-pet')
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('contador').innerText = res.value;
+      })
+      .catch(() => {
+        document.getElementById('contador').innerText = '—';
+      });
+  </script>
+</body>
+</html>
