@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projeto: Aquecedor Solar com Garrafas PET – Versão Didática</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --accent: #136f63;
+      --text: #222;
+    }
+    body {
+      background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.5rem 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+    header p {
+      margin: .3rem 0;
+    }
+    main {
+      max-width: 960px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 3rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.3rem 1.5rem;
+      margin-bottom: 1.3rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.05);
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: .8rem 0 1rem;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: .6rem;
+      text-align: left;
+      font-size: .9rem;
+    }
+    th {
+      background: #eee;
+    }
+    .dica {
+      background: #fff7dd;
+      border-left: 4px solid #f1b208;
+      padding: .5rem .7rem;
+      font-size: .9rem;
+      border-radius: 4px;
+      margin: .8rem 0;
+    }
+    footer {
+      text-align: center;
+      font-size: .8rem;
+      color: #555;
+      padding: 2rem 1rem 3rem;
+    }
+    .code {
+      font-family: Consolas, "Courier New", monospace;
+      background: #eee;
+      padding: .4rem .6rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto: Aquecedor Solar de Água com Garrafas PET</h1>
+    <p><strong>Versão Didática (para alunos)</strong></p>
+    <p>Prof. William Mendonça – Química | Centro Educacional Darcy Ribeiro (SEEDF)</p>
+  </header>
+
+  <main>
+    <section class="card" id="introducao">
+      <h2>1. Introdução</h2>
+      <p>
+        Este projeto mostra que dá para aquecer água usando só o Sol, materiais recicláveis e um pouco de ciência. A ideia é montar um aquecedor solar simples usando <strong>garrafas PET transparentes</strong>, <strong>caixas de leite</strong> e <strong>tubos de PVC pintados de preto</strong>.
+      </p>
+      <p>
+        Com ele você vai revisar conteúdos de Química (transformação de energia, propriedades dos materiais), Física (calor, radiação, efeito estufa) e ainda falar de <strong>sustentabilidade</strong>.
+      </p>
+    </section>
+
+    <section class="card" id="objetivos">
+      <h2>2. Objetivos</h2>
+      <ul>
+        <li>Entender como funciona um aquecedor solar.</li>
+        <li>Aprender na prática o efeito do Sol sobre materiais diferentes.</li>
+        <li>Reaproveitar materiais que iriam para o lixo.</li>
+        <li>Perceber que energia limpa é possível e barata.</li>
+        <li>Trabalhar em grupo e registrar o experimento.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="teoria">
+      <h2>3. Fundamentação Teórica</h2>
+      <p>
+        O Sol emite energia. Quando essa energia bate em uma superfície escura (preta), ela é quase toda absorvida e vira <strong>calor</strong>. Quando ela passa por um material transparente e fica “presa” lá dentro, isso lembra o <strong>efeito estufa</strong>.
+      </p>
+      <p>
+        No nosso projeto:
+      </p>
+      <ul>
+        <li>a garrafa PET funciona como “vidro” de estufa;</li>
+        <li>o tubo preto é o que esquenta;</li>
+        <li>a caixa de leite aluminizada ajuda a refletir mais luz para o tubo.</li>
+      </ul>
+      <p>
+        É Química? É Física? É os dois. 😁
+      </p>
+    </section>
+
+    <section class="card" id="materiais">
+      <h2>4. Materiais</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Quantidade</th>
+            <th>Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Garrafas PET (2 L)</td>
+            <td>20 a 30</td>
+            <td>Fazer o “túnel” transparente</td>
+          </tr>
+          <tr>
+            <td>Caixas de leite</td>
+            <td>20 a 30</td>
+            <td>Refletir luz para o tubo</td>
+          </tr>
+          <tr>
+            <td>Tubo de PVC 20 mm</td>
+            <td>3 a 6 m</td>
+            <td>Por onde passa a água</td>
+          </tr>
+          <tr>
+            <td>Tinta preta fosca</td>
+            <td>1 lata</td>
+            <td>Esquentar mais rápido</td>
+          </tr>
+          <tr>
+            <td>Mangueira</td>
+            <td>2 a 3 m</td>
+            <td>Entrada e saída da água</td>
+          </tr>
+          <tr>
+            <td>Suporte (madeira/ferro)</td>
+            <td>1</td>
+            <td>Manter o sistema inclinado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="montagem">
+      <h2>5. Montagem passo a passo</h2>
+      <ol>
+        <li>Lave e seque as garrafas PET e as caixas de leite.</li>
+        <li>Corte as garrafas no sentido do comprimento, de modo que caibam sobre o tubo.</li>
+        <li>Abra as caixas de leite e deixe o lado brilhante para fora.</li>
+        <li>Pinte o tubo de PVC de <strong>preto fosco</strong> e espere secar.</li>
+        <li>Posicione o tubo pintado e cubra com as garrafas PET.</li>
+        <li>Coloque as caixas de leite atrás, como se fossem “asas” refletoras.</li>
+        <li>Monte tudo em uma base inclinada voltada para o norte.</li>
+        <li>Ligue ao reservatório e teste.</li>
+      </ol>
+      <div class="dica">
+        💡 <strong>Dica:</strong> se estiver no DF, uma inclinação de cerca de 35° costuma funcionar bem.
+      </div>
+    </section>
+
+    <section class="card" id="calculos">
+      <h2>6. Cálculo simples de aquecimento</h2>
+      <p>Fórmula usada:</p>
+      <p class="code">Q = m · c · ΔT</p>
+      <p>
+        Exemplo: se 10 L (10 kg) de água sobem de 25°C para 45°C:
+      </p>
+      <p class="code">Q = 10 × 4,18 × 20 = 836 kJ</p>
+      <p>Ou seja: o Sol entregou energia suficiente para fazer esse aquecimento.</p>
+    </section>
+
+    <section class="card" id="conclusao">
+      <h2>7. Conclusão</h2>
+      <p>
+        Dá para aprender ciência fazendo, testando e medindo. O aquecedor solar de PET mostra exatamente isso: ciência não é só fórmula, é resolução de problema real.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Material didático aberto – Prof. William Mendonça – SEEDF<br />
+    Você pode publicar este arquivo no GitHub Pages.
+  </footer>
+</body>
+</html>

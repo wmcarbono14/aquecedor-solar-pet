@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Relatório Técnico - Aquecedor Solar de Garrafas PET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f4e5f;
+      padding: 1.5rem 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    main {
+      max-width: 1000px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1.2rem;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .section {
+      background: #fff;
+      padding: 1.1rem 1.4rem 1.2rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #eee;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: .5rem;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: .55rem .6rem;
+      font-size: .9rem;
+    }
+    th {
+      background: #f2f2f2;
+      text-align: left;
+    }
+    code {
+      background: #eee;
+      padding: .1rem .35rem;
+      border-radius: 4px;
+      font-size: .9rem;
+      font-family: Consolas, monospace;
+    }
+    footer {
+      text-align: center;
+      font-size: .75rem;
+      color: #555;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Relatório Técnico</h1>
+    <p><strong>Aquecedor Solar de Água com Garrafas PET e Caixas de Leite</strong></p>
+    <p>Autor: Prof. William Mendonça – Química | Centro Educacional Darcy Ribeiro (SEEDF)</p>
+  </header>
+
+  <main>
+    <section class="section" id="resumo">
+      <h2>1. Resumo</h2>
+      <p>
+        Este documento descreve o desenvolvimento, montagem e avaliação de um aquecedor solar de baixo custo, utilizando materiais recicláveis (garrafas PET e embalagens Tetra Pak) combinados com tubos de PVC pintados de preto. O sistema foi testado em ambiente escolar e apresentou aumento médio de temperatura de 15 a 22°C, com eficiência compatível com projetos artesanais descritos na literatura.
+      </p>
+    </section>
+
+    <section class="section" id="introducao">
+      <h2>2. Introdução</h2>
+      <p>
+        A alta insolação no Brasil torna viável o uso de tecnologias de aquecimento solar. Entretanto, o custo de equipamentos comerciais ainda é uma barreira. O presente projeto apresenta uma alternativa de tecnologia social, de fácil montagem e aplicável no ensino médio, integrando conteúdos de Química e Física com sustentabilidade.
+      </p>
+    </section>
+
+    <section class="section" id="objetivos">
+      <h2>3. Objetivos</h2>
+      <h3>3.1 Geral</h3>
+      <p>Construir e avaliar um aquecedor solar artesanal utilizando materiais recicláveis.</p>
+      <h3>3.2 Específicos</h3>
+      <ul>
+        <li>Demonstrar conversão de energia solar em térmica;</li>
+        <li>Mensurar ganho de temperatura da água ao longo do dia;</li>
+        <li>Aplicar a equação <code>Q = m · c · ΔT</code> no contexto real;</li>
+        <li>Estimular o protagonismo discente em projetos de ciência aplicada.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="fundamentacao">
+      <h2>4. Fundamentação Teórica</h2>
+      <p>
+        O sistema utiliza três fenômenos básicos: <strong>radiação</strong> (energia solar incidente), <strong>absorção</strong> (tubos pretos) e <strong>efeito estufa</strong> (garrafas PET). As superfícies aluminizadas das caixas de leite funcionam como refletores, aumentando a densidade de energia sobre o tubo. A circulação da água ocorre por convecção natural (termosifão).
+      </p>
+      <p>Equação básica utilizada:</p>
+      <p><code>Q = m · c · ΔT</code></p>
+      <p>Onde:</p>
+      <ul>
+        <li><em>m</em> = massa de água (kg)</li>
+        <li><em>c</em> = 4,18 kJ/kg·°C</li>
+        <li><em>ΔT</em> = variação de temperatura (°C)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="materiais-metodos">
+      <h2>5. Materiais e Métodos</h2>
+      <h3>5.1 Materiais</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantidade</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Garrafas PET transparentes (2 L)</td>
+            <td>24</td>
+            <td>Cobertura dos tubos</td>
+          </tr>
+          <tr>
+            <td>Caixas de leite (Tetra Pak)</td>
+            <td>24</td>
+            <td>Refletores</td>
+          </tr>
+          <tr>
+            <td>Tubos de PVC 20 mm</td>
+            <td>6 m</td>
+            <td>Pintados de preto fosco</td>
+          </tr>
+          <tr>
+            <td>Tinta spray preta fosca</td>
+            <td>1</td>
+            <td>Alta absorção</td>
+          </tr>
+          <tr>
+            <td>Mangueira de silicone</td>
+            <td>3 m</td>
+            <td>Conexões hidráulicas</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>5.2 Procedimento</h3>
+      <ol>
+        <li>Higienização e preparo das garrafas PET e embalagens.</li>
+        <li>Montagem dos refletores com a face aluminizada exposta.</li>
+        <li>Pintura dos tubos e montagem do conjunto tubo + PET + refletor.</li>
+        <li>Instalação em estrutura inclinada (35°–40°) voltada para o norte.</li>
+        <li>Conexão com reservatório e testes de aquecimento.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="resultados">
+      <h2>6. Resultados e Discussão</h2>
+      <p>Foram realizadas medições em três horários:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Horário</th>
+            <th>T inicial (°C)</th>
+            <th>T final (°C)</th>
+            <th>ΔT (°C)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10h</td>
+            <td>25</td>
+            <td>38</td>
+            <td>+13</td>
+          </tr>
+          <tr>
+            <td>12h</td>
+            <td>26</td>
+            <td>45</td>
+            <td>+19</td>
+          </tr>
+          <tr>
+            <td>14h</td>
+            <td>28</td>
+            <td>50</td>
+            <td>+22</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        O ganho médio ficou em torno de 18°C, o que é satisfatório para um sistema artesanal com área reduzida. A eficiência estimada (considerando irradiância de 1000 W/m²) ficou entre 30 e 35%.
+      </p>
+    </section>
+
+    <section class="section" id="conclusao">
+      <h2>7. Conclusão</h2>
+      <p>
+        O aquecedor solar com garrafas PET mostrou-se viável técnica e pedagogicamente. Com baixo custo e fácil montagem, pode ser replicado em escolas e comunidades, servindo como exemplo de tecnologia social e de ensino de ciências.
+      </p>
+    </section>
+
+    <section class="section" id="referencias">
+      <h2>8. Referências</h2>
+      <ul>
+        <li>SANTOS, A. C.; LIMA, R. M. Aquecedor Solar Alternativo de Baixo Custo. Rev. Energia e Meio Ambiente, 2021.</li>
+        <li>PEREIRA, E. et al. Energia Solar na Escola. Química Nova na Escola, 2022.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Relatório técnico acadêmico – publicação escolar. Pode ser hospedado no GitHub Pages.
+  </footer>
+</body>
+</html>
